@@ -1,11 +1,15 @@
 @echo off
 color 0A
 title ANIMATION
-mode con cols=20 lines=5
+
+set /p x= enter the 1st part: 
+set /p y= enter the 2nd part:
+cls
+
 :animation1
-echo ###################
-echo #    ANIMATION    #
-echo ###################
+echo ################################
+echo  %x%             
+echo ################################
 
 
 timeout /t 1 /nobreak > nul
@@ -14,9 +18,9 @@ goto animation2
 
 
 :animation2 
-echo @@@@@@@@@@@@@@@@@@@
-echo @    BY: COR3     @
-echo @@@@@@@@@@@@@@@@@@@
+echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+echo  %y%             
+echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 timeout /t 1 /nobreak > nul
 cls
